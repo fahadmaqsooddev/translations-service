@@ -38,7 +38,7 @@ php artisan key:generate
 
 
 **
-4. Set Up the Database**
+**4. Set Up the Database****
 
 Create a new MySQL database (matching your .env DB_DATABASE):
 
