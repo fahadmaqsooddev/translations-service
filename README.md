@@ -81,3 +81,20 @@ POST /api/translations – create translation (auth required).
 GET /api/translations/export/json – export translations (auth required).
 
 GET /api/locales, GET /api/tags – fetch locales/tags (auth required).
+
+
+
+
+Design Choices
+
+Framework: Laravel for rapid development, MVC structure, and built-in security features.
+
+Authentication: Laravel Sanctum for token-based API security.
+
+Database: Many-to-many relationship between TranslationKey and Tag for flexible tagging.
+
+API Design: RESTful API endpoints for translations, locales, and tags.
+
+Performance: Optimized queries and batch processing for large translation exports.
+
+Testing: Used Laravel's built-in testing features and RefreshDatabase trait for clean test runs.
