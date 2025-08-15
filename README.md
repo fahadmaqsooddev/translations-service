@@ -3,13 +3,13 @@
 git clone https://github.com/fahadmaqsooddev/translations-service.git
 cd translations-service
 
-2- Install Dependencies
+**2- Install Dependencies**
 
 composer install
 npm install
 npm run dev   # compile frontend assets if any
 
-3- Create Environment File
+**3- Create Environment File**
 
 
 copy  .env.example .env
@@ -37,8 +37,8 @@ Generate the app key:
 php artisan key:generate
 
 
-
-4. Set Up the Database
+**
+4. Set Up the Database**
 
 Create a new MySQL database (matching your .env DB_DATABASE):
 
@@ -55,7 +55,7 @@ php artisan migrate
 php artisan db:seed
 
 
-5. Set Up Authentication
+**5. Set Up Authentication**
 
 This project uses Laravel Sanctum for API authentication.
 
@@ -64,7 +64,7 @@ Ensure SANCTUM_STATEFUL_DOMAINS is set in .env.
 Make sure auth:sanctum middleware is applied to API routes
 
 
-6-Run the Application
+**6-Run the Application**
 
 php artisan serve
 
@@ -72,13 +72,14 @@ php artisan serve
 The app should now be accessible at http://localhost:8000.
 
 
-7. Run Tests
+**7. Run Tests**
 
 
 php artisan test
 
 
-8- API Endpoints
+**8- API Endpoints
+**
 
 POST /api/login – authenticate user and get token.
 
