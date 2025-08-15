@@ -30,8 +30,6 @@ DB_DATABASE=translations_service
 DB_USERNAME=root
 DB_PASSWORD=your_password
 
-SANCTUM_STATEFUL_DOMAINS=localhost
-
 Generate the app key:
 
 php artisan key:generate
@@ -58,17 +56,12 @@ php artisan db:seed
 **5. Set Up Authentication**
 
 This project uses Laravel Sanctum for API authentication.
-
-Ensure SANCTUM_STATEFUL_DOMAINS is set in .env.
-
 Make sure auth:sanctum middleware is applied to API routes
 
 
 **6-Run the Application**
 
 php artisan serve
-
-
 The app should now be accessible at http://localhost:8000.
 
 
